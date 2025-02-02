@@ -19,7 +19,7 @@ namespace CustomerPortal.Server.Controllers
             _accountManager = accountManager;
         }
 
-        //Using the onboard client button, the FE should call this endpoint for us to save new account details into the account table
+        //Using the onboard client button, the FE should call this endpoint for us to save new account details into the account table.
         [HttpPost(Name = "CreateAccount")]
         public List<Account> CreateAccount(Account acc)
         {
